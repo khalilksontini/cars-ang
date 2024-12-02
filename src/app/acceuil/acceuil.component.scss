@@ -1,0 +1,57 @@
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.face-snap-card {
+  box-sizing: border-box;
+  width: 30%;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+
+.snapped {
+  background-color: rgba(lightgreen, 0.4);
+  color: darkgreen;
+  button {
+    box-shadow: lightgreen 3px 3px 7px;
+    color: darkgreen;
+    &:active {
+      box-shadow: lightgreen 0 0 5px;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.face-snap-cardpp {
+  box-sizing: border-box;
+  width: 30%;
+  min-height: 200px;
+  box-shadow: lightgray 4px 4px 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  text-align: center;
+  background-color: lightgray; /* Couleur de fond pour mieux voir le carré */
+}
+
+a {
+  font-size: 65px;
+  text-align: center;
+  color: black; /* Vous pouvez ajuster la couleur si nécessaire */
+  text-decoration: none;
+  font-weight: bold;
+}

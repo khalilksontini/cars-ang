@@ -1,0 +1,25 @@
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Vidéo en pleine hauteur de l'écran */
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Met la vidéo derrière le contenu */
+  object-fit: cover; /* Adapte la vidéo pour couvrir l'arrière-plan */
+}
+
+.video-background .content {
+  position: relative;
+  z-index: 1; /* Le contenu apparaît au-dessus de la vidéo */
+  color: rgb(248, 102, 4); /* Couleur du texte pour contraste */
+  text-align: center;
+  padding: 20px;
+}

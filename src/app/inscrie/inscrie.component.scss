@@ -1,0 +1,51 @@
+.example-form {
+  min-width: 350px;
+  max-width: 650px;
+  width: 90%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+.example-container {
+  min-width: 150px;
+  max-width: 500px;
+  width: 80%;
+}
+
+.cont {
+  border: 20px;
+  box-shadow: 2px 2px 20px 2px #209677;
+  margin: 10px 30px 20px 350px;
+  padding: 40px 0px 30px 80px;
+  border-radius: 10px;
+  width: 750px;
+}
+.b {
+  margin: 20px 0px 0px 170px;
+  width: 40%;
+  height: 30px;
+  color: #209677;
+  border-radius: 25px;
+  border: 3px solid;
+  border-color: #209677;
+  background-color: #fff;
+}
+.b:hover {
+  color: #fff;
+  background: #209677;
+  border-color: #fff;
+}
+
+td {
+  padding-right: 8px;
+}

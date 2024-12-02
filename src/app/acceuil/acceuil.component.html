@@ -1,0 +1,29 @@
+<h1>les voiture</h1>
+<div class="contain">
+  <div
+    class="face-snap-card"
+    *ngFor="let voiture of _shered.voitures; let i = index"
+    [ngClass]="{ snapped: voiture.buttonText === 'Oops, un jaime!' }"
+  >
+    <h2>{{ voiture.Marque }}</h2>
+    <h4>{{ voiture.Model }}</h4>
+    <p>Mis en ligne le {{ voiture.date }}</p>
+    <img [src]="voiture.Image" [alt]="voiture.Marque" />
+    <p>{{ voiture.Color }}</p>
+    <p>{{ voiture.Prix }} mille dinars</p>
+    <p>
+      <button (click)="onSnap(voiture)">{{ voiture.buttonText }}</button>
+      {{ voiture.like }}
+    </p>
+    <textarea
+      [(ngModel)]="voiture.commentaire"
+      placeholder="Entrer votre commentaire"
+    ></textarea>
+    <br />
+    <button [routerLink]="['/detail', i]">detail</button>
+    <button (click)="deleteCar(voiture)">Supprimer</button>
+  </div>
+  <div class="face-snap-cardpp">
+    <a [routerLink]="['/ajouter']">+</a>
+  </div>
+</div>

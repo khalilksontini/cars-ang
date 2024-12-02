@@ -1,0 +1,26 @@
+<div
+  class="background-container"
+  [ngStyle]="{
+    'background-image': isIndexValid() ? 'none' : 'url(' + voiture.Image + ')',
+    'background-color': isIndexValid() ? 'transparent' : 'rgba(0, 0, 0, 0.5)'
+  }"
+>
+  <div class="video-background">
+    <video autoplay loop muted playsinline *ngIf="isIndexValid()">
+      <source src="{{ v[index] }}" type="video/mp4" />
+    </video>
+    <div class="content">
+      <h1>Détails de la voiture</h1>
+      <div *ngIf="voiture">
+        <p><strong>Marque :</strong> {{ voiture.Marque }}</p>
+        <p><strong>Modèle :</strong> {{ voiture.Model }}</p>
+        <p><strong>Couleur :</strong> {{ voiture.Color }}</p>
+        <p><strong>Prix :</strong> {{ voiture.Prix }} mille dinars</p>
+        <p><strong>Date :</strong> {{ voiture.date | date }}</p>
+        <p><strong>Likes :</strong> {{ voiture.like }}</p>
+        <p><strong>commentaire :</strong> {{ voiture.commentaire }}</p>
+      </div>
+      <button (click)="backToList()">Retour à la liste</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="cont">
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        placeholder="Ex. pat@example.com"
+        formControlName="email"
+      />
+    </mat-form-field>
+
+    <div class="example-container">
+      <mat-form-field class="example-full-width">
+        <mat-label>Enter your password</mat-label>
+        <input
+          matInput
+          [type]="hide() ? 'password' : 'text'"
+          formControlName="password"
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="clickEvent($event)"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide()"
+        >
+          <mat-icon>{{ hide() ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <div>
+      <button type="submit" class="b">conecter</button>
+    </div>
+  </form>
+</div>

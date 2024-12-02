@@ -1,0 +1,38 @@
+.ajou {
+  border: 20px;
+  box-shadow: 2px 2px 20px 2px #209677;
+  margin: 20px 30px 20px 500px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  width: 500px;
+}
+.i {
+  box-shadow: 2px 3px 5px #209677;
+  background-color: white;
+  color: #209677;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  border: 30px;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+.b {
+  margin: 20px 0px 0px 60px;
+  width: 70%;
+  height: 30px;
+  color: #209677;
+  border-radius: 25px;
+  border: 3px solid;
+  border-color: #209677;
+  background-color: #fff;
+}
+.b:hover {
+  color: #fff;
+  background: #209677;
+  border-color: #fff;
+}

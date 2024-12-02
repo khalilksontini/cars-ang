@@ -1,0 +1,26 @@
+<h1>la classification</h1>
+<input
+  type="number"
+  placeholder="Entrez un prix maximum"
+  [(ngModel)]="filterPrice"
+/>
+<div class="contain">
+  <ng-container *ngFor="let voiture of _shered.voitures">
+    <div
+      class="face-snap-card"
+      [ngClass]="{
+        hight: voiture.Prix > 129,
+        medium: voiture.Prix < 130 && voiture.Prix > 69,
+        low: voiture.Prix < 70
+      }"
+      *ngIf="!filterPrice || voiture.Prix < filterPrice"
+    >
+      <h2>{{ voiture.Marque }}</h2>
+      <h4>{{ voiture.Model }}</h4>
+      <p>Mis en ligne le {{ voiture.date }}</p>
+      <img [src]="voiture.Image" [alt]="voiture.Marque" />
+      <p>{{ voiture.Color }}</p>
+      <p>{{ voiture.Prix }} mille dinars</p>
+    </div>
+  </ng-container>
+</div>

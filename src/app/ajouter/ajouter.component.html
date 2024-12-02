@@ -1,0 +1,68 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+/>
+
+<div class="container">
+  <h1>Ajouter une voiture</h1>
+  <div class="ajou">
+    <div class="int">
+      <input
+        [(ngModel)]="voiture.Marque"
+        type="text"
+        class="i"
+        placeholder="Marque"
+      />
+    </div>
+
+    <div class="int">
+      <input
+        [(ngModel)]="voiture.Model"
+        type="text"
+        class="i"
+        placeholder="Model"
+      />
+    </div>
+
+    <div class="int">
+      <input
+        [(ngModel)]="voiture.Image"
+        type="text"
+        class="i"
+        placeholder="Image"
+      />
+    </div>
+
+    <div class="int">
+      <input
+        [(ngModel)]="voiture.Color"
+        type="text"
+        class="i"
+        placeholder="Color"
+      />
+    </div>
+
+    <div class="int">
+      <input
+        [(ngModel)]="voiture.Prix"
+        type="text"
+        class="i"
+        placeholder="Prix"
+      />
+    </div>
+    <div class="int">
+      <input
+        [(ngModel)]="voiture.date"
+        type="date"
+        class="i"
+        placeholder="date"
+      />
+    </div>
+
+    <div>
+      <button (click)="ajout()" class="b">
+        <i class="fa fa-paper-plane"></i> Ajouter
+      </button>
+    </div>
+  </div>
+</div>

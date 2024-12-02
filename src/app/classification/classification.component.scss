@@ -1,0 +1,35 @@
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.face-snap-card {
+  box-sizing: border-box;
+  width: 30%;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+.low {
+  background-color: rgb(151, 151, 151);
+}
+.medium {
+  background-color: rgba(1, 21, 151, 0.427);
+}
+.hight {
+  background-color: #800020;
+}
+input {
+  margin: 30px;
+}
